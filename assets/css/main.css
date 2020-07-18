@@ -1,0 +1,756 @@
+/*** normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css ***/
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+figcaption,
+figure,
+main {
+  display: block;
+}
+figure {
+  margin: 1em 40px;
+}
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+a:active,
+a:hover {
+  outline-width: 0;
+}
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}
+b,
+strong {
+  font-weight: inherit;
+}
+b,
+strong {
+  font-weight: bolder;
+}
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+dfn {
+  font-style: italic;
+}
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
+audio,
+video {
+  display: inline-block;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+img {
+  border-style: none;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+button,
+input {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+[type="reset"],
+[type="submit"],
+button,
+html [type="button"] {
+  -webkit-appearance: button;
+}
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+[type="button"]:-moez-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring,
+button:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+progress {
+  display: inline-block;
+  vertical-align: baseline;
+}
+textarea {
+  overflow: auto;
+}
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+details,
+menu {
+  display: block;
+}
+summary {
+  display: list-item;
+}
+canvas {
+  display: inline-block;
+}
+template {
+  display: none;
+}
+[hidden] {
+  display: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgb(0, 20, 60, 0.6);
+  -webkit-text-size-adjust: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  outline: none;
+}
+
+/*** HTML5 Boilplate ***/
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Fix the thick text rendering on OSX */
+html,
+button,
+input,
+select,
+option {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-synthesis: antialiased;
+  font-family: "Calibre Light";
+}
+
+body {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  font-family: "Calibre Light";
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  font-size: inherit;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*** SIDE BAR THINGS ***/
+.sideBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #2e6c53;
+  color: #b8cec5;
+}
+
+.sideBarContents {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding-right: 130px;
+}
+
+.sidePro {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.sideProImg {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+.sideProImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.sideProInfo {
+  display: block;
+  position: relative;
+}
+
+.sideProName {
+  position: relative;
+  display: block;
+  font-size: 18px;
+  font-family: "Calibre Medium";
+}
+
+.sideProId {
+  font-size: 15px;
+}
+
+.editBtn {
+  position: absolute;
+  right: 0;
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+.sideLinks {
+  position: relative;
+  width: 100%;
+  display: block;
+  margin-top: 20px;
+}
+
+.sideLinks li {
+  display: block;
+  width: 100%;
+  position: relative;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  margin-bottom: 10px;
+}
+
+.sideLinks li a {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  padding: 0 20px;
+  padding-top: 3px;
+}
+
+.sideLinks .linkIcon {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  display: block;
+  margin-right: 10px;
+  transform: translateY(-3px);
+}
+
+.sideLinks li:hover {
+  background-color: rgb(0, 0, 0, 0.3);
+}
+
+.bottomLink {
+  position: absolute;
+  bottom: 50px;
+}
+
+.appCard {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  box-shadow: 0 15px 40px -100px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  background-color: #282e38;
+  color: #adb5bd;
+}
+
+.lightAppCard {
+  color: #000;
+}
+
+/** To toggle the side bar **/
+
+.toggled .appCard {
+  position: fixed;
+  top: 5%;
+  right: -70%;
+  width: 100%;
+  height: 90%;
+  border-radius: 10px;
+}
+
+/** Fixing the nav Bar ***/
+
+.appNav {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  background-color: rgb(54, 64, 78, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(0, 15, 67, 0.1);
+  display: flex;
+  align-items: center;
+  z-index: 10;
+  transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.lightAppNav {
+  background-color: rgba(255, 255, 255, 0.7) !important;
+  border-bottom: 1px solid rgba(0, 15, 67, 0.1) !important;
+}
+
+.sideBarToggler {
+  position: absolute;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  background-color: transparent;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  border-radius: 100px;
+  z-index: 10;
+}
+
+/***
+.togglerLine {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #adb5bd;
+    transition: all 0.3s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+}
+
+.togglerLine:nth-child(1) {
+    top: 0;
+}
+
+.togglerLine:nth-child(3) {
+    bottom: 0;
+}
+
+.toggled .sideBarToggler {
+    height: 12px;
+}
+
+.toggled .togglerLine:nth-child(2) {
+    transform: translateX(30px);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.toggled .togglerLine:nth-child(1) {
+    transform: rotate(35deg) translateY(6.5px);
+}
+
+.toggled .togglerLine:nth-child(3) {
+    transform: rotate(-35deg) translateY(-6.5px);
+}
+
+***/
+
+.navLinksCont {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding-left: 60px;
+  padding-top: 8px;
+  padding-right: 20px;
+}
+
+.navLogo {
+  display: block;
+  position: relative;
+  font-size: 20px;
+  font-family: "Calibre Regular";
+}
+
+.modeToggler {
+  position: relative;
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  border: none;
+  transform: translateY(-5px);
+  padding: 2px;
+}
+
+/** Bottom Nav ***/
+
+.bottomNav {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background-color: rgb(54, 64, 78, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  z-index: 10;
+  transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.lightBottomNav {
+  background-color: rgba(255, 255, 255, 0.7) !important;
+  border-bottom: 1px solid rgba(0, 15, 67, 0.1) !important;
+}
+
+.bottomLinks {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  padding: 0 10px;
+  padding-right: 80px;
+}
+
+.bottomLinks li {
+  width: 33.3%;
+  position: relative;
+  display: block;
+}
+
+.bottomLinks li a {
+  width: 24px;
+  height: 24px;
+  display: block;
+  position: relative;
+  margin: auto;
+}
+
+.addBtn {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #2e6c53;
+  margin-left: 15px;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  z-index: 11;
+}
+
+.addBtn img {
+  width: 24px;
+  height: 24px;
+}
+
+/*** Static Main Contents ***/
+
+.appMain {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100vh;
+  background-color: transparent;
+  overflow-x: hidden;
+  padding: 70px 0;
+}
+
+.recentPoster {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 20px;
+}
+
+.recentPoster .posterImg {
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  border: 2px solid #2e6c53;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: auto;
+  margin-bottom: 10px;
+  padding: 2px;
+}
+
+.posterImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: inherit;
+}
+
+.recentPoster .posterName {
+  text-align: center;
+  display: block;
+  font-family: "Calibre Regular";
+}
+
+.postList {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.postCard {
+  width: 100%;
+  position: relative;
+  display: block;
+  height: auto;
+  background-color: rgb(54, 64, 78, 0.8);
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.lightPostCard {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.postHead {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.posterInfo {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.posterInfo .posterImg {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  display: block;
+  margin-right: 10px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.posterInfo .posterName {
+  transform: translateY(3px);
+  font-family: "Calibre Regular";
+  display: block;
+}
+
+.postTime {
+  display: block;
+  position: relative;
+  font-size: 13px;
+}
+
+.postItem {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  margin: 15px 0;
+  border-radius: 6px;
+}
+
+.postItem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.postActions {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.postActions .link {
+  position: relative;
+  width: 33.3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.postActions .link img {
+  width: 18px;
+  height: 18px;
+  position: relative;
+}
+
+.linkContent {
+  transform: translateY(2px);
+  margin-left: 10px;
+  font-family: "Calibre Regular";
+}
+
+/* MODE BALL ANIMATION */
+
+.lightModeBall {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 100px;
+  background-color: #f6f7f9;
+  width: 0;
+  height: 0;
+  transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.lightMode {
+  width: 100%;
+  height: 100%;
+  border-radius: 0px;
+}
